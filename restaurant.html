@@ -6,6 +6,7 @@
     <title>PizzaBurger - доставка еды на дом</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -19,7 +20,7 @@
                     <img src="img\user.svg" alt="user" class="btn-icon">
                     <span class="btn-text">Войти</span>
                     </button>
-                <button class="button">
+                <button class="button" id="card-button">
                     <img src="img\container.svg" alt="container" class="btn-icon">
                     <span class="btn-text">Корзина</span>
                   </button>
@@ -40,7 +41,7 @@
                 <!--card-->
                 <div class="cards">
     
-                    <div class="card">
+                    <div class="card wow fadeInUp"data-wow-delay="0.2s">
                     <img src="img/roll1.jpg" alt="img" class="card-image">
                         <div class="card-text">
                             <div class="card-heading">
@@ -59,14 +60,14 @@
                     </div>
                     </div>
     
-                    <div class="card">
+                    <div class="card wow fadeInUp"data-wow-delay="0.3s">
                     <img src="img/roll2.jpg" alt="img" class="card-image">
                     <div class="card-text">
                         <div class="card-heading">
-                            <h3 class="card-title card-title-reg">Калифорния лосось стандарт</h3>
+                            <h3 class="card-title card-title-reg">Калифорния лосось </h3>
                         </div>
                         <div class="card-info">
-                            <div class="ingredients">Рис, лосось, авокадо, огурец, майонез, икра масаго, водоросли нори.</div>
+                            <div class="ingredients">Рис, лосось, авокадо, огурец, майонез, икра ...</div>
                     </div>
                     <div class="card-buttons">
                         <button class=" button button-primary">
@@ -78,7 +79,7 @@
                 </div>
                     </div>
     
-                    <div class="card">
+                    <div class="card wow fadeInUp"data-wow-delay="0.4s">
                      <img src="img/roll3.jpg" alt="img" class="card-image">
                      <div class="card-text">
                         <div class="card-heading">
@@ -97,14 +98,14 @@
                 </div>
                     </div>
     
-                    <div class="card">
+                    <div class="card wow fadeInUp"data-wow-delay="0.6s">
                         <img src="img/roll4.jpg" alt="img" class="card-image">
                         <div class="card-text">
                             <div class="card-heading">
                                 <h3 class="card-title card-title-reg">Цезарь маки хl</h3>
                             </div>
                             <div class="card-info">
-                                <div class="ingredients">Рис, куриная грудка копченая, икра масаго, томат, айсберг, соус цезарь...</div>
+                                <div class="ingredients">Рис, куриная грудка копченая, икра масаго, томат, айсберг...</div>
                         </div>
                         <div class="card-buttons">
                             <button class=" button button-primary">
@@ -116,7 +117,7 @@
                     </div>
                     </div>
     
-                    <div class="card">
+                    <div class="card wow fadeInUp"data-wow-delay="0.5s">
                         <img src="img/roll5.jpg" alt="img" class="card-image">
                         <div class="card-text">
                             <div class="card-heading">
@@ -135,7 +136,7 @@
                     </div>
                     </div>  
     
-                    <div class="card">
+                    <div class="card wow fadeInUp"data-wow-delay="0.4s">
                         <img src="img/roll6.jpg" alt="img" class="card-image">
                         <div class="card-text">
                             <div class="card-heading">
@@ -194,8 +195,45 @@
                     <button class="counter-button">+</button>
                 </div>
             </div>
+            <div class="food-row">
+                <span class="food-name"> Ролл угорь стандарт</span>
+                <strong class="food-price">250 ₽</strong>
+                <div class="food-counter">
+                    <button class="counter-button">-</button>
+                    <span class="counter">1</span>
+                    <button class="counter-button">+</button>
+                </div>
+            </div>
+            <div class="food-row">
+                <span class="food-name"> Ролл угорь стандарт</span>
+                <strong class="food-price">250 ₽</strong>
+                <div class="food-counter">
+                    <button class="counter-button">-</button>
+                    <span class="counter">1</span>
+                    <button class="counter-button">+</button>
+                </div>
+            </div>
+            <div class="food-row">
+                <span class="food-name"> Ролл угорь стандарт</span>
+                <strong class="food-price">250 ₽</strong>
+                <div class="food-counter">
+                    <button class="counter-button">-</button>
+                    <span class="counter">1</span>
+                    <button class="counter-button">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <span class="modal-pricetag">1250 ₽</span>
+            <div class="footer-buttons">
+                <button class="button button-primary">Оформить заказ</button>
+                <button class="button">Отмена</button>
+            </div>
+
         </div>
     </div>
 </div>
+<script src="js/wow.min.js"></script>
+<script src="js/main.js"></script>
 </body> 
 </html>
